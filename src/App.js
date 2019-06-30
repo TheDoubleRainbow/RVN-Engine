@@ -14,7 +14,7 @@ const backgrounds = {
 
 function App() {
   const [bg, setBg] = useState(backgrounds.mainMenuBg);
-  const [state, setState] = useState('gameView');
+  const [state, setState] = useState('startView');
 
   const changeBg = (bgName) => {
     setBg(backgrounds[bgName])
