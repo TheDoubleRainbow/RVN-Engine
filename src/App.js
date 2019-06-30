@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
+import StartView from './views/StartView/StartView';
+import GameView from './views/GameView/GameView';
 import './App.css';
+import { appContext } from './appContext';
+
+import mainMenuBg from './images/backgrounds/mainMenu.jpg'
 
 function App() {
-  const [appName, setTest] = useState('RVN Engine');
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Welcome to {appName}</p>
-      </header>
+    <div className="App" style={{backgroundImage: `url(${mainMenuBg})`}}>
+      <StartView />
+      <GameView />
     </div>
   );
 }

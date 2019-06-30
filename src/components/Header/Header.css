@@ -1,0 +1,15 @@
+.ui_header {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    text-align: center;
+}
+
+.ui_header-text {
+    padding: 10px 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #424242;
+    font-size: 2rem;
+    display: inline-block;
+}
