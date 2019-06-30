@@ -3,7 +3,7 @@
     width: 300px;
     min-height: 400px;
     top: 280px;
-    left: 120px;
+    left: calc(50% - 300px/2);
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.9);
 }
@@ -19,9 +19,18 @@
     padding: 20px 0px;
     cursor: pointer;
     transition-duration: .3s;
+    color: gray;
 }
 
-.ui_main-menu-item:hover {
+.ui_main-menu-item.active {
+    color: black;
+}
+
+.ui_main-menu-item.active:first-child:hover{
+    border-radius: 5px 5px 0px 0px;
+}
+
+.ui_main-menu-item.active:hover {
     border-bottom: 2px solid aqua;
     background: white;
 }

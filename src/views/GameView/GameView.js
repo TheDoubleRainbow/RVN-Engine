@@ -1,10 +1,13 @@
 import React from 'react';
+import GameInfo from '../../components/GameInfo/GameInfo';
 
-function GameView () {
+function GameView (props) {
 
 
     return (
-        <div className='app_game-view'>GameView</div>
+        <div className='app_game-view'>
+            <GameInfo changeBg = {props.changeBg} />
+        </div>
     );
 }
 

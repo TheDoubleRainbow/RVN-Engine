@@ -1,0 +1,47 @@
+.ui_game-info {
+    position: absolute;
+    width: 100%;
+    margin-top: calc(100vh - 250px);
+    height: 250px;
+}
+
+.ui_game-info-text{
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    left: 15%;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.ui_game-info-menu {
+    position: absolute;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.ui_game-info-menu-el {
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    transition-duration: .3s;
+    color: gray;
+}
+
+.ui_game-info-menu-el.active{
+    color: black;
+    cursor: pointer;
+}
+
+.ui_game-info-menu-el.active:hover{
+    text-shadow: 0 0 3px #424242;
+}
+
+.ui_game-info-text-name, .ui_game-info-text-content {
+    padding: 5px 5px 0px 20px;
+}
+
+.ui_game-info-text-name {
+    font-weight: bold;
+}
